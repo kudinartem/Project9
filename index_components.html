@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Components</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <ul class="container">
+        <li class="name"><a href="../Project9/index_dashboard.html">mylib</a></li>
+        <li class="text"><a href="../Project9/index_elements.html">Elements</a></li>
+        <li class="text"><a href="#top">Components</a></li>
+        <li class="text"><a href="../Project9/index_layouts.html">Layouts</a></li>
+        <li class="text"><a href="#">Drafts</a></li>
+        <li class="text"><a href="#">Documentation</a></li>
+    </ul>
+</header>
+<main class="main">
+    <aside class="sidebar">
+        <ul class="sidebar-container">
+            <li class="side-text">
+                <a href="#"><span></span>chevron menu</a>
+            </li>
+            <li class="side-text">
+                <a href="#"><span></span>dropdown menu</a>
+            </li>
+            <li class="side-text">
+                <a href="#"><span></span>modal box</a>
+            </li>
+            <li class="side-text">
+                <a href="#"><span></span>allerts</a>
+            </li>
+        </ul>
+    </aside>
+    <div class="content">
+        <p class="cont-header">Chevron menu</p>
+        <hr>
+        <div class="main-box">
+                        <pre class="in-box"><code>Possible to use on gradient background
+Easy to use opacity for items background
+Cross-browser</code></pre>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">careers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">faq</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <fieldset class="border-box">
+            <legend class="legend">html</legend>
+            <div class="primary-box">
+                            <pre class="in-box"><code>&#60;nav class=&#34;nav&#34;&#62;
+    &#60;ul class=&#34;nav-list&#34;&#62;
+      &#60;li class=&#34;nav-item&#34;&#62;
+        &#60;a href=&#34;#&#34;&#62;about&#60;/a&#62;
+      &#60;/li&#62;
+      &#60;li class=&#34;nav-item&#34;&#62;
+        &#60;a href=&#34;#&#34;&#62;careers&#60;/a&#62;
+      &#60;/li&#62;
+      &#60;li class=&#34;nav-item&#34;&#62;
+        &#60;a href=&#34;#&#34;&#62;faq&#60;/a&#62;
+      &#60;/li&#62;
+      &#60;li class=&#34;nav-item&#34;&#62;
+        &#60;a href=&#34;#&#34;&#62;contact&#60;/a&#62;
+      &#60;/li&#62;
+    &#60;/ul&#62;
+&#60;/nav&#62;</code></pre>
+            </div>
+        </fieldset>
+        <fieldset class="border-box">
+            <legend class="legend">css</legend>
+            <div class="primary-box">
+                            <pre class="in-box"><code>.nav {
+    min-width: 1024px;
+    box-sizing: border-box;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+    padding-right: 60px;
+}
+.nav-list .nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 30px 25px 32px;
+    margin: 2px 25px;
+    background: #ffffff;
+}
+.nav-item a {
+    text-decoration: none;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000000;
+}
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+.nav-item a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: -25px;
+    border-style: solid;
+    border-width: 48px 0 46px 25px;
+    border-color: #ffffff transparent;
+}
+.nav-item:hover a:before {
+    border-color: rgba(255, 255, 255, 0.7) transparent;
+}
+.nav-item a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -25px;
+    border-style: solid;
+    border-width: 48px 0 47px 25px;
+    border-color: transparent transparent transparent #ffffff;
+}
+.nav-item:hover a:after {
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+}</code></pre>
+            </div>
+        </fieldset>
+    </div>
+</main>
+</body>
+</html>

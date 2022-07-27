@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layouts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <ul class="container">
+        <li class="name"><a href="../Project9/index_dashboard.html">mylib</a></li>
+        <li class="text"><a href="../Project9/index_elements.html">Elements</a></li>
+        <li class="text"><a href="../Project9/index_components.html">Components</a></li>
+        <li class="text"><a href="#top">Layouts</a></li>
+        <li class="text"><a href="#">Drafts</a></li>
+        <li class="text"><a href="#">Documentation</a></li>
+    </ul>
+</header>
+<main class="main">
+    <aside class="sidebar">
+        <ul class="sidebar-container">
+            <li class="side-text">
+                <a href="#"><span></span>layout no1</a>
+            </li>
+            <li class="side-text">
+                <a href="#"><span></span>layout no2</a>
+            </li>
+            <li class="side-text">
+                <a href="#"><span></span>layout No3</a>
+            </li>
+        </ul>
+    </aside>
+    <div class="content">
+        <p class="cont-header">Layout No1</p>
+        <hr>
+        <div class="main-box">
+                        <pre class="in-box"><code>Highly recommended to use display: flex;
+Do not apply height and width
+Not to confine layout in zooming</code></pre>
+        </div>
+        <div class="layout">
+        <div class="wrapper-layout">
+            <header class="header-layout">header</header>
+            <main class="main-layout">
+                <aside class="sidebar-layout">sidebar</aside>
+                <div class="content-layout">content</div>
+            </main>
+            <footer class="footer-layout">header</footer>
+        </div>
+        </div>
+        <fieldset class="border-box">
+            <legend class="legend">html</legend>
+            <div class="primary-box">
+                            <pre class="in-box"><code>&#60;body&#62;
+    &#60;div class=&#34;wrapper&#34;&#62;
+        &#60;header class=&#34;header&#34;&#62;header&#60;/header&#62;
+        &#60;main class=&#34;main&#34;&#62;
+            &#60;aside class=&#34;sidebar&#34;&#62;sidebar&#60;/aside&#62;
+            &#60;div class=&#34;content&#34;&#62;content&#60;/div&#62;
+        &#60;/main&#62;
+        &#60;footer class=&#34;footer&#34;&#62;header&#60;/footer&#62;
+    &#60;/div&#62;
+&#60;/body&#62;</code></pre>
+            </div>
+        </fieldset>
+        <fieldset class="border-box">
+            <legend class="legend">css</legend>
+            <div class="primary-box">
+                            <pre class="in-box"><code>body {
+	margin: 0;
+}
+.header {
+	background: pink;
+	flex: 0 0 80px;
+}
+.main {
+	background: grey;
+	flex-grow: 1;
+	display: flex;
+}
+.sidebar {
+	background: gold;
+	flex: 0 0 240px;
+}
+.wrapper {
+	min-height: 100vh;
+	background: #ccc;
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	background: brown;
+	flex-grow: 1;
+}
+.footer {
+	background: black;
+	flex: 0 0 80px;
+}</code></pre>
+            </div>
+        </fieldset>
+    </div>
+</main>
+</body>
+</html>
